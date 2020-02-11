@@ -1,0 +1,48 @@
+// code for removing extra space around corder
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+// end
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+    width: 30%;
+    border: .5px rgba(0, 0, 0, 0.096) solid;
+    border-radius: 10px;
+    .header-container {
+        text-align: center;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.459);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px 0px 10px;
+        .input {
+            margin-bottom: 30px;
+        }
+    }
+    .action-container {
+        display: flex;
+        justify-content: center;
+        // margin-bottom: 30px;
+        .login-button {
+            width: 100%;
+            margin: 0 10px 30px 10px;
+        }
+    }
+}
