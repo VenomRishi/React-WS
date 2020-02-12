@@ -1,0 +1,30 @@
+@import '../../assets/css/CommonStyle.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-paper {
+  width: 30%;
+  .header-container {
+    @include header-container;
+  }
+  .input-container {
+    @include input-container-mixin;
+    .input {
+      margin-bottom: 20px;
+    }
+  }
+  .action-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    div {
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
+  }
+}

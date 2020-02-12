@@ -1,4 +1,5 @@
-// code for removing extra space around corder
+@import '../../assets/css/CommonStyle.scss';
+// code for removing extra space around corner
 html, body {
     margin: 0;
     padding: 0;
@@ -6,9 +7,7 @@ html, body {
 * {
     box-sizing: border-box;
 }
-
 // end
-
 
 .container {
   display: flex;
@@ -17,32 +16,28 @@ html, body {
   height: 100vh;
 }
 
-.login-container {
+.login-paper {
     width: 30%;
-    border: .5px rgba(0, 0, 0, 0.096) solid;
-    border-radius: 10px;
     .header-container {
-        text-align: center;
-        font-size: 24px;
-        color: rgba(0, 0, 0, 0.459);
-        margin-top: 30px;
-        margin-bottom: 30px;
+        @include header-container;
     }
     .input-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 10px 0px 10px;
+        @include input-container-mixin;
         .input {
             margin-bottom: 30px;
         }
     }
     .action-container {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         // margin-bottom: 30px;
         .login-button {
-            width: 100%;
-            margin: 0 10px 30px 10px;
+            margin: 0 10px 20px 10px;
         }
+    }
+    .option-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0px 30px 0px;
+
     }
 }
