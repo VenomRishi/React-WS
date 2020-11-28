@@ -26,7 +26,7 @@ export class Register extends Component {
       .post(BASE_URL + REGISTER_URL, this.state)
       .then(response => {
         useHistory().push("/login");
-        console.log(response.data.message);
+        console.log(response);
       })
       .catch(error => {
         console.log(error.response.data.message);
